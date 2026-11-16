@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "synthetic-qubit-001",
+  "title": "Illustrative energy-gap comparison with assumed critical temperatures",
+  "hypothesis": "For this toy interpolation, increasing assumed Tc increases the modeled gap at fixed temperature. This does not test a material enhancement mechanism.",
+  "owner": "example-only",
+  "data_kind": "synthetic",
+  "application": "qubits",
+  "model": {
+    "name": "bcs-gap-toy-v1",
+    "critical_temperature_K": 2.0,
+    "baseline_critical_temperature_K": 1.2,
+    "temperatures_K": [0, 0.1, 0.5, 1, 1.2, 1.5, 2, 3]
+  },
+  "evidence": []
+}
