@@ -55,3 +55,11 @@ Checksums detect file changes; they do not establish authenticity, measurement q
 Run `python -m unittest discover -s tests -v` before submitting changes. Add physical models only with a cited derivation, parameter domain, units, baseline, and independent validation checks. Preserve the distinction between synthetic, simulation, and experimental inputs. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Licensed under the existing [Apache License 2.0](LICENSE).
+
+## Browser app
+
+The `web/` directory contains the interactive app: experiment creation/import, local record storage, synthetic model charts, JSON exports, and local SHA-256 evidence checks. Serve it with `python -m http.server 8000 --directory web` and open `http://localhost:8000`. Run its model/validation checks with `node web/tests/model.test.cjs`.
+
+Browser records stay on the current device and origin; export records regularly. JSON experiment exports work with the Python CLI. Web result exports are separately labeled bundles and do not claim evidence verification. The browser does not upload files or synchronize with GitHub.
+
+Hosted app: https://researchos-tect-synquanon.troturn31.chatgpt.site (owner-private).
